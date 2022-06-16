@@ -24,11 +24,48 @@
         <label>How many pets do you currently have?
             <input type="number" name="petCount">
         </label> 
-        
+
+        <label>Why do you want to adopt a new pet?
+            <textarea name="applicantReason" rows="4" cols="50">Enter a response here...</textarea>
+        </label>
+
+        <fieldset>
+            <legend>What types of animals do/have you owned?</legend>
+          <label>Dogs
+            <input type="checkbox" name="type" value="dogs">
+          </label>
+          <label>Cats
+            <input type="checkbox" name="type" value="cats">
+          </label>
+          <label>Others
+            <input type="checkbox" name="type" value="others">
+          </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Are you interested in adoption special needs or elderly pets?</legend>
+            <label>
+                <input type="radio" name="special" value="yes">
+                Yes
+            </label>
+            <label>
+                <input type="radio" name="special" value="no">
+                No
+            </label>
+        </fieldset>
+
+        <label>How many hours a day is someone usually home to keep a pet company?</label>
+            <select name="hours">
+                <option value="">Please select a value</option>
+                <option value="few">less than 10</option>
+                <option value="some">10 to 16</option>
+                <option value="many">more than 16</option>
+            </select>
+
         <label>To create account, enter a password:
             <input type="password" name="accountPW">
         </label>
-
+        
         <input type="submit" value="Apply now!">
     
     
